@@ -1,0 +1,17 @@
+{
+  "name": "E*TRADE Options APY Calculator",
+  "version": "1.0",
+  "manifest_version": 3,
+  "description": "Adds APY calculations to E*TRADE options tables",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://us.etrade.com/e/t/invest/quotesandresearch*",
+        "https://us.etrade.com/etx/trd/quotesandresearch*"
+      ],
+      "js": ["contentScript.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
