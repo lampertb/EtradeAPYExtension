@@ -39,7 +39,7 @@ git clone https://github.com/yourusername/etrade-apy-calculator.git
 1. Log in to your E*TRADE account
 
 2. Navigate to the options chain page:
-   - Go to: https://us.etrade.com/e/t/invest/quotesandresearch
+   - Go to: https://us.etrade.com/e/t/invest/quotesandresearch?content=3&sym=QQQ
    - Enter a stock symbol
    - Click "Option Chain" or select an option strike
 
