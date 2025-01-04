@@ -56,13 +56,7 @@ APY = ((bid price × 10) / (strike price × 1000)) × (365 / days to expiration)
 - Main Research Page:
   https://us.etrade.com/e/t/invest/quotesandresearch
 
-- Option Chain Examples:
-  - AAPL Options:
-    https://us.etrade.com/e/t/invest/quotesandresearch?symbol=AAPL#optionsChain
-  - SPY Options:
-    https://us.etrade.com/e/t/invest/quotesandresearch?symbol=SPY#optionsChain
-
-Note: You must be logged into your E*TRADE account to access these URLs.
+Note: You must be logged into your E*TRADE account to access these URL and using the classic options chain
 
 ## Understanding the Results
 
