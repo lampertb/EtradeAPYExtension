@@ -1,15 +1,25 @@
 {
-  "name": "E*TRADE Options APY Calculator",
+  "name": "E*TRADE APY Calculator",
   "version": "1.0",
   "manifest_version": 3,
-  "description": "Adds APY calculations to E*TRADE options tables",
-  "permissions": ["activeTab"],
+  "description": "Adds APY calculations to E*TRADE option chains with color-coded indicators for returns and open interest",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.svg",
+      "48": "icon.svg",
+      "128": "icon.svg"
+    }
+  },
+  "icons": {
+    "16": "icon.svg",
+    "48": "icon.svg",
+    "128": "icon.svg"
+  },
   "content_scripts": [
     {
-      "matches": [
-        "https://us.etrade.com/e/t/invest/quotesandresearch*",
-        "https://us.etrade.com/etx/trd/quotesandresearch*"
-      ],
+      "matches": ["https://us.etrade.com/*", "https://etrade.com/*"],
       "js": ["contentScript.js"],
       "run_at": "document_idle"
     }

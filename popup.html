@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>E*TRADE APY Calculator</title>
+  <style>
+    body {
+      width: 400px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+    }
+    h1 {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 16px;
+      color: #444;
+      margin: 15px 0 10px;
+    }
+    .color-example {
+      display: flex;
+      align-items: center;
+      margin: 8px 0;
+    }
+    .color-box {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+    }
+    .description {
+      margin: 10px 0;
+      color: #666;
+    }
+    .note {
+      font-style: italic;
+      color: #777;
+      margin: 10px 0;
+      font-size: 13px;
+    }
+    .formula {
+      background: #f5f5f5;
+      padding: 10px;
+      border-radius: 4px;
+      margin: 10px 0;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>E*TRADE APY Calculator</h1>
+  
+  <div class="description">
+    This extension adds APY (Annual Percentage Yield) calculations to E*TRADE option chains, helping you identify potential returns for both calls and puts.
+  </div>
+
+  <h2>APY Formula</h2>
+  <div class="formula">
+    APY = ((bid price × 10) / (strike price × 1000)) × (365 / days to expiration)
+  </div>
+
+  <h2>Color Coding</h2>
+  
+  <div class="color-example">
+    <div class="color-box" style="background: #0000FF"></div>
+    <span>Blue: Highest APY among options with open interest</span>
+  </div>
+  
+  <div class="color-example">
+    <div class="color-box" style="background: #009900"></div>
+    <span>Green: Positive APY</span>
+  </div>
+  
+  <div class="color-example">
+    <div class="color-box" style="background: #cc0000"></div>
+    <span>Red: Negative APY</span>
+  </div>
+
+  <h2>Additional Indicators</h2>
+  <div class="description">
+    <strong>Bold Text:</strong> Indicates options that have open interest (actively traded)
+  </div>
+
+  <div class="note">
+    Note: APY calculations are automatically updated when option prices change. The extension works with all E*TRADE option table layouts (combined, calls-only, and puts-only).
+  </div>
+</body>
+</html>
