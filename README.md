@@ -17,6 +17,8 @@ A Chrome extension that adds APY (Annual Percentage Yield) calculations to E*TRA
 - Auto-updates when option prices change
 - Clear visual indicators for best opportunities
 
+![alt text](image.png)
+
 ## Installation
 
 1. Clone this repository or download the source code:
